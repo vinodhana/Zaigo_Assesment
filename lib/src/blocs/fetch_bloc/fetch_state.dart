@@ -13,8 +13,10 @@ class FetchError extends FetchState {
 }
 
 class FetchSuccess extends FetchState {
-  List<User> user = [];
-  FetchSuccess(this.user);
+  List<UserList> userList = [];
+
+  FetchSuccess(this.userList);
+
   @override
-  List<Object> get props => [user];
+  List<Object> get props => [userList];
 }

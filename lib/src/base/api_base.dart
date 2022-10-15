@@ -6,7 +6,7 @@ import '../constants/constant.dart';
 
 class ApiBase {
   Future<dynamic> postLogin(String url, dynamic body) async {
-    final response = await http.post(Uri.parse(apiUrl + url), body: body);
+    final response = await http.post(Uri.parse(baseUrl + url), body: body);
     var responseJson = _returnResponse(response);
     print(responseJson);
     return responseJson["token"];
@@ -15,7 +15,7 @@ class ApiBase {
   Future<dynamic> getData(String url) async {
     var responseJson;
     try {
-      final response = await http.get(Uri.parse(apiUrl + url));
+      final response = await http.get(Uri.parse(baseUrl + url));
       responseJson = _returnResponse(response);
       print(responseJson.toString());
     } catch (e) {

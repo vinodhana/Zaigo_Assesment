@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 class CustomButton extends StatefulWidget {
   final Function() onPressed;
   final String text;
-  const CustomButton({required this.text, required this.onPressed, Key? key})
+  final double? width;
+  final double? height;
+  final TextStyle? style;
+  const CustomButton({required this.text,this.width,this.height,this.style, required this.onPressed, Key? key})
       : super(key: key);
 
   @override
@@ -14,14 +17,17 @@ class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 50,
-      width: 300,
+      width: widget.width != null ?widget.width : 100,
+      height: widget.height != null ?widget.height : 30,
       child: MaterialButton(
         color: Colors.blue,
         onPressed: widget.onPressed,
-        child: Text(widget.text),
+        child: Text(widget.text,style: widget.style != null ? widget.style : const TextStyle(
+            fontWeight: FontWeight.w400,
+            fontSize: 16,
+            color: Colors.black54),),
         shape: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20.2),
+            borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide.none),
       ),
     );
