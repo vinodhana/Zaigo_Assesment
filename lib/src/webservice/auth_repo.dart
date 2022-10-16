@@ -7,6 +7,7 @@ import 'package:zaigo_assesment/src/webservice/apis/api_base_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:zaigo_assesment/src/widgets/app_snack_bar.dart';
 
 class CommonRepo {
   static final CommonRepo _singleton = CommonRepo._internal();
@@ -31,6 +32,7 @@ class CommonRepo {
       await AppPreferences.setLoginStatus(true);
       return loggedInResponse;
     } catch (e) {
+
       debugPrint('ERROR LOGIN ' + e.toString());
     }
     return null;

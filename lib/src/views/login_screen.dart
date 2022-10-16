@@ -1,5 +1,6 @@
 import 'package:zaigo_assesment/src/blocs/auth_bloc/auth_bloc.dart';
 import 'package:zaigo_assesment/src/views/main_screen.dart';
+import 'package:zaigo_assesment/src/widgets/app_snack_bar.dart';
 import 'package:zaigo_assesment/src/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -120,9 +121,15 @@ class _LoginScreenState extends State<LoginScreen> {
                     color: Colors.white,
                     fontSize: 20),
                 onPressed: () {
-                  _authBloc!.add(LoginEvent(
-                      email: phoneTextEditingController.text,
-                      password: passwordTextEditingController.text));
+                  if(validation()){
+                    _authBloc!.add(LoginEvent(
+                        email: phoneTextEditingController.text,
+                        password: passwordTextEditingController.text));
+                  }else{
+                    const AppSnackBar(message: 'Please provide valid credentials', isPositive: false)
+                        .showAppSnackBar(context);
+                  }
+
                 },
                 text: "Login",
               ),
@@ -131,5 +138,24 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
+  }
+
+  bool validation() {
+    if (phoneTextEditingController.text == null || passwordTextEditingController.text.isEmpty) {
+      const AppSnackBar(message: 'Please Enter phone number and password', isPositive: false)
+          .showAppSnackBar(context);
+      return false;
+    } else if (phoneTextEditingController.text == null || phoneTextEditingController.text.isEmpty) {
+      const AppSnackBar(message: 'Please Enter phone number', isPositive: false)
+          .showAppSnackBar(context);
+      return false;
+    } else if (passwordTextEditingController.text == null ||
+        passwordTextEditingController.text.isEmpty) {
+      const AppSnackBar(message: 'Please Enter password', isPositive: false)
+          .showAppSnackBar(context);
+      return false;
+    } else {
+      return true;
+    }
   }
 }
