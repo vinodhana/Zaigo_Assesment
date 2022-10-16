@@ -1,7 +1,7 @@
+import 'package:zaigo_assesment/src/utils/app_preferences.dart';
+import 'package:zaigo_assesment/src/views/login_screen.dart';
+import 'package:zaigo_assesment/src/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_videos/src/utils/app_preferences.dart';
-import 'package:flutter_videos/src/views/login_screen.dart';
-import 'package:flutter_videos/src/widgets/custom_button.dart';
 
 class DialogWidget extends StatelessWidget {
   const DialogWidget({Key? key}) : super(key: key);

@@ -1,9 +1,7 @@
+import 'package:zaigo_assesment/src/utils/constants.dart';
+import 'package:zaigo_assesment/src/webservice/auth_repo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_videos/src/utils/app_preferences.dart';
-import 'package:flutter_videos/src/utils/constants.dart';
-import 'package:flutter_videos/src/views/login_screen.dart';
-import 'package:flutter_videos/src/webservice/auth_repo.dart';
 import '../blocs/fetch_bloc/fetch_bloc.dart';
 
 class HomePage extends StatefulWidget {

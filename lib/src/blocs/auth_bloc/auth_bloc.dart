@@ -1,9 +1,9 @@
 import 'dart:async';
 
+import 'package:zaigo_assesment/src/model/loggedin_response.dart';
+import 'package:zaigo_assesment/src/webservice/auth_repo.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter_videos/src/model/loggedin_response.dart';
-import 'package:flutter_videos/src/webservice/auth_repo.dart';
 import 'package:meta/meta.dart';
 
 part 'auth_event.dart';

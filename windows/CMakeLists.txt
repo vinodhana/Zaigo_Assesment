@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(flutter_videos LANGUAGES CXX)
+project(zaigo_assesment LANGUAGES CXX)
 
-set(BINARY_NAME "flutter_videos")
+set(BINARY_NAME "zaigo_assesment")
 
 cmake_policy(SET CMP0063 NEW)
 

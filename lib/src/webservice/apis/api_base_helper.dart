@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
+import 'package:zaigo_assesment/src/utils/app_preferences.dart';
+import 'package:zaigo_assesment/src/webservice/webservice_constants.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_videos/src/utils/app_preferences.dart';
-import 'package:flutter_videos/src/webservice/webservice_constants.dart';
 import 'AppException.dart';
 import 'api_config.dart';
 import 'simplified_uri.dart';

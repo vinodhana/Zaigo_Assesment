@@ -1,4 +1,4 @@
-# flutter_videos
+# zaigo_assesment
 
 A new Flutter project.
 

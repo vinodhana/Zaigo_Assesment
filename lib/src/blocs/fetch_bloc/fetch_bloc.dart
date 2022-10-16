@@ -1,7 +1,7 @@
+import 'package:zaigo_assesment/src/model/LawersListResponse.dart';
+import 'package:zaigo_assesment/src/webservice/auth_repo.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter_videos/src/model/LawersListResponse.dart';
-import 'package:flutter_videos/src/webservice/auth_repo.dart';
 
 part 'fetch_event.dart';
 

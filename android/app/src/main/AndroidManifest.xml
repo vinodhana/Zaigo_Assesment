@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_videos">
+    package="com.zaigo_assesment">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
    <application
-        android:label="flutter_videos"
+        android:label="zaigo_assesment"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

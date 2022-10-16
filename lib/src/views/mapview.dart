@@ -1,10 +1,9 @@
 import 'dart:async';
-import 'dart:developer';
 
+import 'package:zaigo_assesment/src/webservice/auth_repo.dart';
+import 'package:zaigo_assesment/src/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_videos/src/webservice/auth_repo.dart';
-import 'package:flutter_videos/src/widgets/custom_text_field.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MapsScreenPage extends StatefulWidget {

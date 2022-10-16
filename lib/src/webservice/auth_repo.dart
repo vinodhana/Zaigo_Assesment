@@ -1,10 +1,10 @@
+import 'package:zaigo_assesment/src/constants/constant.dart';
+import 'package:zaigo_assesment/src/model/LawersListResponse.dart';
+import 'package:zaigo_assesment/src/model/loggedin_response.dart';
+import 'package:zaigo_assesment/src/utils/app_preferences.dart';
+import 'package:zaigo_assesment/src/views/mapview.dart';
+import 'package:zaigo_assesment/src/webservice/apis/api_base_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_videos/src/constants/constant.dart';
-import 'package:flutter_videos/src/model/LawersListResponse.dart';
-import 'package:flutter_videos/src/model/loggedin_response.dart';
-import 'package:flutter_videos/src/utils/app_preferences.dart';
-import 'package:flutter_videos/src/views/mapview.dart';
-import 'package:flutter_videos/src/webservice/apis/api_base_helper.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 

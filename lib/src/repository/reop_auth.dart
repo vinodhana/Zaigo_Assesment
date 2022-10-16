@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:zaigo_assesment/src/constants/constant.dart';
+import 'package:zaigo_assesment/src/utils/app_preferences.dart';
+import 'package:zaigo_assesment/src/webservice/apis/AppException.dart';
+import 'package:zaigo_assesment/src/webservice/apis/simplified_uri.dart';
+import 'package:zaigo_assesment/src/webservice/webservice_constants.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_videos/src/constants/constant.dart';
-import 'package:flutter_videos/src/utils/app_preferences.dart';
-import 'package:flutter_videos/src/webservice/apis/AppException.dart';
-import 'package:flutter_videos/src/webservice/apis/simplified_uri.dart';
-import 'package:flutter_videos/src/webservice/webservice_constants.dart';
 
 import 'package:http/http.dart' as http;
 

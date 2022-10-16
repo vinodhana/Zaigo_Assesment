@@ -1,10 +1,8 @@
+import 'package:zaigo_assesment/src/blocs/auth_bloc/auth_bloc.dart';
+import 'package:zaigo_assesment/src/views/main_screen.dart';
+import 'package:zaigo_assesment/src/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_videos/src/blocs/auth_bloc/auth_bloc.dart';
-import 'package:flutter_videos/src/views/home_screen.dart';
-import 'package:flutter_videos/src/views/main_screen.dart';
-import 'package:flutter_videos/src/widgets/custom_text_field.dart';
-
 import '../widgets/custom_button.dart';
 
 class LoginScreen extends StatefulWidget {

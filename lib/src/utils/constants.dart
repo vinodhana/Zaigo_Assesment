@@ -1,5 +1,5 @@
+import 'package:zaigo_assesment/src/widgets/dialog_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_videos/src/widgets/dialog_widget.dart';
 
 pushNamedAndRemoveAll(BuildContext context, String routeName) {
   FocusScopeNode currentFocus = FocusScope.of(context);

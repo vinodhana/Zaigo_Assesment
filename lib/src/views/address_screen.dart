@@ -1,16 +1,7 @@
+import 'package:zaigo_assesment/src/webservice/auth_repo.dart';
+import 'package:zaigo_assesment/src/widgets/custom_button.dart';
+import 'package:zaigo_assesment/src/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_videos/src/ui_utils/app_assets.dart';
-import 'package:flutter_videos/src/utils/app_preferences.dart';
-import 'package:flutter_videos/src/views/home_screen.dart';
-import 'package:flutter_videos/src/views/login_screen.dart';
-import 'package:flutter_videos/src/views/main_screen.dart';
-import 'package:flutter_videos/src/views/mapview.dart';
-import 'package:flutter_videos/src/webservice/auth_repo.dart';
-import 'package:flutter_videos/src/widgets/custom_button.dart';
-import 'package:flutter_videos/src/widgets/custom_text_field.dart';
-import 'package:geocoding/geocoding.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class AddressScreen extends StatefulWidget {
   const AddressScreen({
@@ -50,7 +41,7 @@ class _AddressScreenState extends State<AddressScreen> {
       appBar: AppBar(
         elevation: 0.1,
         automaticallyImplyLeading: false,
-        title: Text(
+        title: const Text(
           'Address',
           style: TextStyle(fontSize: 16),
         ),

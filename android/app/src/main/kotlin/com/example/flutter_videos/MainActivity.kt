@@ -1,4 +1,4 @@
-package com.example.flutter_videos
+package com.zaigo_assesment
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,10 +1,8 @@
+import 'package:zaigo_assesment/src/ui_utils/app_assets.dart';
+import 'package:zaigo_assesment/src/utils/app_preferences.dart';
+import 'package:zaigo_assesment/src/views/login_screen.dart';
+import 'package:zaigo_assesment/src/views/main_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_videos/src/ui_utils/app_assets.dart';
-import 'package:flutter_videos/src/utils/app_preferences.dart';
-import 'package:flutter_videos/src/views/home_screen.dart';
-import 'package:flutter_videos/src/views/login_screen.dart';
-import 'package:flutter_videos/src/views/main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({

@@ -1,10 +1,8 @@
+import 'package:zaigo_assesment/src/blocs/auth_bloc/auth_bloc.dart';
+import 'package:zaigo_assesment/src/views/splash_screen.dart';
+import 'package:zaigo_assesment/src/webservice/auth_repo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_videos/src/blocs/auth_bloc/auth_bloc.dart';
-import 'package:flutter_videos/src/repository/reop_auth.dart';
-import 'package:flutter_videos/src/views/login_screen.dart';
-import 'package:flutter_videos/src/views/splash_screen.dart';
-import 'package:flutter_videos/src/webservice/auth_repo.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

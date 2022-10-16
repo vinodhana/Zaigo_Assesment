@@ -1,7 +1,7 @@
+import 'package:zaigo_assesment/src/views/address_screen.dart';
+import 'package:zaigo_assesment/src/views/home_screen.dart';
+import 'package:zaigo_assesment/src/views/photo_gallery.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_videos/src/views/address_screen.dart';
-import 'package:flutter_videos/src/views/home_screen.dart';
-import 'package:flutter_videos/src/views/photo_gallery.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key, this.isFromSignUp = false}) : super(key: key);
